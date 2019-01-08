@@ -1,0 +1,16 @@
+{
+  "name": "react-training",
+  "version": "1.0.0",
+  "description": "\"A typescript react course.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "course",
+    "react",
+    "typescript"
+  ],
+  "author": "thdk",
+  "license": "ISC"
+}
