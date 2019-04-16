@@ -3,10 +3,10 @@
 # Set up dev environment
 
 Prerequisites
-  - Install visual studio code
-  - Install node
+  * Install visual studio code
+  * Install node
 
-# Init node & typescript
+## Init node & typescript
 
 Open a terminal window in your project directory.
 
@@ -21,16 +21,18 @@ A package.json file:
 Source: [npm docs](https://docs.npmjs.com/creating-a-package-json-file)
 
 ---
-Init **Typescript** in your project with `tsc --init`
+Now init **Typescript** in your project with `tsc --init`.
 
-# Project folder structure
+## Project folder structure
 
-public
---index.html
-src
---app.ts
-package.json
-tsconfig.json
+The project folder structure which you'll have when you have finished chapter 1.
+
+public<br/>
+  -index.html<br/>
+src<br/>
+  -app.ts<br/>
+package.json<br/>
+tsconfig.json<br/>
 
 Start with creating **src/app.ts** and add some dummy code to it.
 
@@ -49,8 +51,8 @@ Also set the module code generation to 'none' (No questions asked here);
 
 "module": "none"
 
-# Build your first typescript code
-You can compile your typescript code using the command `tsc`. 
+## Build your first typescript code
+You can compile your typescript code using the command `tsc`.
 
 However, to make it more generic we are going to add a build script to your project.
 
@@ -78,12 +80,18 @@ Now build your project with `npm run build`
 
 The **public** folder should now contain a **app.js** file containing the compiled typescript code.
 
-# Load the code in your app
-Our web application should know to load the **app.js** file.
+## Load the code in your app
+Our web application should now load the **app.js** file.
 
-Create an **index.html** file in the **public** folder and add the javascript file to it.
+Create **index.html** file in the **public** folder and add the javascript file to it.
 
-# Create a local development server
+```
+<!-- public/index.html -->
+...
+<script type="text/javascript" src="app.js"></script>
+...
+```
+## Create a local development server
 Several solution exist for this but I have found **lite-server** quite easy to use.
 
 Install **lite-server** as a dev dependency to your package.
