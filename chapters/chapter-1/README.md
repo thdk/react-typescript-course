@@ -43,13 +43,13 @@ hello();
 
 The file **app.ts** will be the main entry of your web application.
 
-Update tsconfig.json to save all the compiled code in **public/app.js**
+Typescript can concatenate and emit output all the code into a single javascript file. To do this, you need to update the typescript compiler option 'outFile' in **tsconfig.json**.
 
-"outFile": "./public/app.js"
+`"outFile": "./public/app.js"`
 
 Also set the module code generation to 'none' (No questions asked here);
 
-"module": "none"
+`"module": "none"`
 
 ## Build your first typescript code
 You can compile your typescript code using the command `tsc`.
